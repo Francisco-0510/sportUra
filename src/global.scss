@@ -8,6 +8,702 @@
  * For more information on global stylesheets, visit the documentation:
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
+/***********ESTILOS GENERALES**********************/
+
+//TIPOGRAFÍA
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*Colores*/
+:root {
+  --green-primary-student: #3dec9d;
+  --black-color-student: #1d1d21;
+  --text-inputs-color: #8C8CA1;
+  //COLORES ROJOS DE SISTEMA
+  --red-100: #e53535;
+  --red-75-outline: #ff3b3b;
+  --red-50: #ff5c5c;
+  --red-25: #ff8080;
+  --red-15: #ffe5e5;
+  //COLORES VERDE DE SISTEMA
+  --green-100: #05a660;
+  --green-75-outline: #06c270;
+  --green-50: #39d98a;
+  --green-25: #57eba1;
+  --green-15: #e3fff1;
+  //COLORES AZULES DE SISTEMA
+  --blue-100: #004fc4;
+  --blue-75-outline: #0063f7;
+  --blue-50: #5b8def;
+  --blue-25: #9dbff9;
+  --blue-15: #e3fff1;
+  //COLORES NARANJA DEL SISTEMA
+  --orange-100: #e57a00;
+  --orange-75-outline: #ff8800;
+  --orange-50: #fdac42;
+  --orange-25: #fccc75;
+  --orange-15: #fff8e5;
+  //COLORES OSCUROS DEL SISTEMA
+  --black-100: #1c1c28;
+  --black-75-outline: #28293d;
+  --black-50: #555770;
+  --black-25: #8f90a6;
+  --black-15: #c7c9d9;
+  //COLORES GRISES-LIGHT DEL SISTEMA
+  --light-100: #f4f4f4;
+  --light-75-outline: #ebebf0;
+  --light-50: #f2f2f5;
+  --light-25: #fafafc;
+  --white-light: #ffffff;
+  //COLORES PERSONALIZADOS
+  //Color Verde UTVCO
+  --green-utvco: #00a58e;
+  --green-utvco-75: rgba(0, 165, 143, 0.75);
+  --green-utvco-50: rgba(0, 165, 143, 0.5);
+  --green-utvco-25: rgba(0, 165, 143, 0.25);
+  --green-utvco-15: rgba(0, 165, 143, 0.15);
+  //color naranja tics
+  --orange-tics-100: #fca305;
+  --orange-tics-75-outline: #fca305bf;
+  --orange-tics-50: #fca30580;
+  --orange-tics-25: #fca30540;
+  --orange-tics-15: #fca3051a;
+  
+
+  /*   --green--primary: #3DEC9D;
+    --color-azul-principal: #3DEC9D; 
+    --color-naranja-links: #FF8800;
+    --color-iconos: #5D5D5D;
+    --color-outline-inputs: #8F90A6;
+    --color-texto-inputs-inactive: #4D4D4D;
+    --color-errores: #B00020;
+    --color-titulos-formularios: #172B4D;
+    --color-hover-btnPrimario: #3DEC9D;
+    --color-hover-btnSecundario: #E0ECFF;
+    --color-blanco: #ffffff;
+    --color-negro: #000000; */
+}
+
+//Headline 1;
+.h1-Light {
+  font-family: Poppins;
+  font-size: 79px;
+  font-weight: 300;
+  line-height: 119px;
+  letter-spacing: -1.5px;
+  text-align: left;
+}
+.h1-Regular {
+  font-family: Poppins;
+  font-size: 79px;
+  font-weight: 400;
+  line-height: 119px;
+  letter-spacing: -1.5px;
+  text-align: left;
+}
+//Headlines
+
+.h1-medium {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 79px;
+  line-height: 118px;
+  /* identical to box height */
+  letter-spacing: -1.5px;
+}
+.h1-semibold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 79px;
+  line-height: 118px;
+  /* identical to box height */
+
+  letter-spacing: -1.5px;
+}
+.h1-bold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 79px;
+  line-height: 118px;
+  /* identical to box height */
+  letter-spacing: -1.5px;
+}
+//Headline 2;
+.h2-Light {
+  //styleName: Headlines/Headline 2/H2 Light;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 75px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+.h2-regular {
+  //styleName: Headlines/Headline 2/H2 Regular;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 75px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+.h2-medium {
+  //styleName: Headlines/Headline 2/H2 Medium;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 75px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+.h2-semibold {
+  //styleName: Headlines/Headline 2/H2 SemiBold;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 75px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+.h2-bold {
+  //styleName: Headlines/Headline 2/H2 Bold;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+//Headline 3;
+.h3-Light {
+  //styleName: Headlines/Headline 3/H3 Regular;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.h3-regular {
+  //styleName: Headlines/Headline 3/H3 Medium;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+}
+.h3-medium {
+  //styleName: Headlines/Headline 3/H3 SemiBold;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+}
+.h3-semibold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+}
+.h3-bold {
+  //styleName: Headlines/Headline 3/H3 Bold;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+//Headline 4;
+.h4-regular {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0.25px;
+}
+.h4-medium {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0.25px;
+}
+.h4-semibold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0.25px;
+}
+.h4-bold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0.25px;
+}
+//Headline 5
+.h5-regular {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+.h5-medium {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+.h5-semibold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+.h5-bold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+//Headline 6
+.h6-regular {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+}
+.h6-semibold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+}
+.h6-bold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+}
+
+//SUBTITULOS TEXT
+.sub-1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.15px;
+}
+.sub-2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.1px;
+}
+
+//BODY TEXT
+.body-1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  letter-spacing: 0.5px;
+}
+.body-2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: 0.25px;
+}
+
+//BUTTON TEXTS
+button{
+    margin: auto;
+    width: 286px;
+    padding: 12px, 24px, 12px, 24px;
+    gap: 8px;
+    border-radius: 0;
+}
+.btn-primario{
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.03em;
+    background: rgba(61, 236, 157, 1);
+    color: var(--black-color-student);
+}
+.btn-link{
+    font-weight: 800;
+font-size: 12px;
+line-height: 18px;
+padding: 18px;
+gap: 10px;
+text-decoration: none;
+text-align: center;
+text-transform: uppercase;
+color: var(--orange-75-outline);
+}
+///PLACEHOLDER TEXT
+.textfiel-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+//LABEL TEXT
+.label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--black-50);
+}
+//TEXTTOS DE AYUDA FORMD
+.label-help {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+//TOOLTIP TEXT
+.tooltip-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+/* ion-title {
+    color: white;
+} */
+/*MEDIDAS DE PANTALLA MOVIL*/
+
+/* 
+.interfaz{
+    margin: 15px;
+    padding: 10px;
+} */
+/*GOOGLE ICONS*/
+/* .material-icons{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+} */
+/***********************ESTILOS TEXTO********************/
+/* span, .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: red;
+} 
+p, .bienvenido{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+p, .frase{
+    font-size: 1.12rem;
+    line-height:24px ;
+    font-weight: 300;
+}
+h1, .titulo-form{
+    color: var(--color-blanco);
+    font-size: 2.5rem;
+    line-height: 1.6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 2px 0px;
+    font-weight: 900;
+}
+h2, .titulo-form-h2{
+    color: var(--color-azul-principal);
+    font-size: 1rem;
+    line-height: 1.6;
+    // text-transform: uppercase;
+    font-weight: bolder;
+}
+.registrate p, text-botones{
+    text-align: center;
+    font-size: 0.87rem;
+    font-weight: bold;
+}
+p, text-body1 {
+    padding-bottom: 5px;
+    font-size: 0.87rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.15;
+    color: white !important;
+}*/
+/*ESTILOS DE BOTONES*/
+/*CONTENEDOR DE BOTONES
+.botones{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: space-between;
+    text-align: center;
+    margin: 25px 0px;
+}
+.botones  .btn{
+    width: 100% ;
+    height: 3.31rem;
+    padding: 15px 0px;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    // color: white;
+}
+.botones >.btn-primario:disabled  {
+    color: #6f6f76;
+    border: solid 1px #8F90A6;
+}
+.btn-primario{
+    color: var(--color-negro);
+    background-color: var(--green--primary);
+}*/
+/* .btn-primario:hover{
+    background-color: var(--color-hover-btnPrimario);
+} 
+.btn-secundario{
+    background-color: var(--color-blanco);
+    color: var(--color-azul-principal);
+    border: solid 1px var(--color-azul-principal);
+}
+.btn-secundario:hover{
+    background-color: var(--color-hover-btnSecundario);
+}
+.btn-terciario{
+    color: var(--color-azul-principal);
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    height: 2rem
+}
+
+.btn-link{
+    color: var(--color-naranja-links);
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 2rem
+}*/
+
+/*Texto interfaz bienvenida
+.text{
+    align-content: space-between;
+}
+// /*HEADER IMAGEN REGISTRO E INICIO DE SESIÓN*/
+// .header img{
+//     max-width: 100%;
+//     max-height: 16rem;
+// }*/
+/*ESTILOS INTERFAZ REGISTRO - MUDATE
+.indicaciones{
+    text-align: left;
+}
+.indicaciones .iconos-gofa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.indicaciones .iconos-gofa i{
+    margin: 0 15px;
+    color: var(--color-azul-principal);
+    font-size: 25px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: solid 1px var(--color-azul-principal);
+}
+*/
+
+/***************ESTILOS FORMULARIOS*********************/
+/*Contenedor del formulario
+.formulario{
+    display: flex;
+    flex-direction: column;
+}*/
+/*Si el formulario tiene dos columnas cambiar 
+las propiedades
+.formulario .edad-age{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.formulario label{
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+}*/
+/*Al estar escribiendo sobre un input
+.formulario  input:focus{
+    color: var(--color-blanco);
+    border: solid 1px var(--color-azul-principal);
+    text-align: left;
+    align-items: center;
+}
+.formulario input{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    background-size: 20px; 
+   
+    align-items: center;
+    color: var(--color-blanco);
+    width: 100%;
+    outline: none;
+   
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 35px;
+    border-radius: 5px;
+    border: solid 1px var(--color-outline-inputs);
+    color: white;
+}
+.formulario select{
+    display: flex;
+    align-items: center;
+    color: var(--color-texto-inputs-inactive);
+    width: 100%;
+    outline: none;
+    height: 53px;
+    margin: 10px 0px ;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px var(--color-outline-inputs);
+}*/
+/*Agregar icono al input
+Poner clase al input
+.formulario .usuario, .apellidos{
+    background-image: url("./assets/svg/usuario.svg");
+    
+}
+
+.formulario .campos{
+    background-image: url("./assets/svg/documento.svg");
+}
+
+.formulario .email{
+    background-image: url("./assets/svg/@.svg");
+}
+.formulario .pass{
+    background-image: url("./assets/svg/SVG_Password.svg");
+}
+.formulario .nTel{
+    background-image:  url("./assets/svg/SVG_Telefono.svg   ");
+}
+.formulario  input[type="submit"] {
+    background-color: var(--color-azul-principal);
+    color: var(--color-blanco);
+    font-size: 0.87rem;
+    width: 100%;
+    font-weight: bold;
+    justify-items: center;
+    text-align: center;
+    
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 1.25px;
+}
+.formulario .text-btn3{
+    color: var(--color-azul-principal);
+    font-weight: bold;
+    height: 53px;
+    padding: 10px 0px ;
+    font-size: 14px;
+    text-align: center;
+}
+
+.table {
+    max-width: 100vh
+}
+
+ion-icon{
+    color: white;
+    outline-color: white;
+}
+
+.caja{
+    margin: 10px;
+    background-color: inherit;
+    background: inherit;
+}*/
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
 
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
