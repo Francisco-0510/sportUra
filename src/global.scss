@@ -357,10 +357,15 @@
 //BUTTON TEXTS
 button{
     margin: auto;
-    width: 286px;
+    width: 100%;
     padding: 12px, 24px, 12px, 24px;
     gap: 8px;
-    border-radius: 0;
+    border-radius: 0px;
+}
+.btn-primario[disabled] {
+  background-color: var(--black-75-outline);
+  color: var(--black-25);
+  border: solid 1px var(--black-75-outline);
 }
 .btn-primario{
     text-transform: uppercase;
@@ -396,10 +401,10 @@ color: var(--orange-75-outline);
 .label {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: var(--black-50);
+  color: var(--black-15);
 }
 //TEXTTOS DE AYUDA FORMD
 .label-help {
@@ -409,6 +414,35 @@ color: var(--orange-75-outline);
   font-size: 14px;
   line-height: 140%;
 }
+
+
+ion-input[type=email],
+ion-input[type=password]
+ {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: solid 1px var(--black-25);
+  background-color: transparent;
+  outline: none;
+}
+
+
+
+
+ion-input[type=email]:focus,
+ion-input[type=password]:focus {
+  border: solid 1px var(--blue-75-outline);
+}
+//Estilos Ion-input
+/*ion-input{ 
+   border: solid 1px var(--black-50);
+}
+[type="email"],
+ion-input:active{
+  border: solid 1px var(--green-75-outline);
+} */
 //TOOLTIP TEXT
 .tooltip-text {
   font-family: "Poppins";

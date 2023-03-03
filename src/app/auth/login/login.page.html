@@ -4,17 +4,17 @@
   <img src="../../../assets/img/login.png" class="img-fluid" alt="iniciarSesion">
   <form class="formulario" [formGroup]="miFormulario">
     <div>
-  <label  position=" label">Ingresa tu Usuario</label>
-  <ion-input type="email" [pattern]="emailCheck" placeholder="Ingresa tu Correo Electronico" formControlName="username"></ion-input>
+  <ion-label  position="stacked " class="label">Ingresa tu Usuario</ion-label>
+  <ion-input type="email" [pattern]="emailCheck"  placeholder="Ingresa tu Correo Electronico" formControlName="username"></ion-input>
   <span *ngIf="emailReq()" class="label-help text-danger">Dirección de correo no válida</span>
   <span *ngIf="emailPattern()" class="label-help text-danger">Patrón incorrecto</span>
 </div>
 <div>
-  <label position=" label">Ingresa tu Contraseña</label>
-  <ion-input type="password" class="input pass" placeholder="Ingrese su contraseña" formControlName="password"></ion-input>
+  <ion-label position="stacked" class="label pb-2">Ingresa tu Contraseña</ion-label>
+  <ion-input  type="password"  placeholder="Ingrese su contraseña" formControlName="password"></ion-input>
   <span class="form-text text-danger" *ngIf="campoValido('password')">Minimo 8 caracteres</span>
 </div>
-  <ion-item class="pb-2 bg-transparent">
+  <ion-item class="pb-1 bg-transparent">
     <ion-checkbox slot="start"></ion-checkbox>
     <label class="label">Recordar Datos</label>
   </ion-item>
