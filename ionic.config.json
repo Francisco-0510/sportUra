@@ -1,0 +1,7 @@
+{
+  "name": "sportUra",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
