@@ -195,11 +195,22 @@
    * Material Design Dark Theme
    * -------------------------------------------
    */
-
+.md body, 
+ion-content{
+   background-color: #1D1D21;
+  opacity: 0.8;
+  background-image:  radial-gradient(hsl(154, 94%, 37%) 0.6px, transparent 0.3px), radial-gradient(hsl(154, 94%, 37%) 0px, #1D1D21 0px);
+  background-size: 32px 32px;
+  background-position: center;
+}
   .md body {
-    --ion-background-color: rgb(29, 29, 33);
-    --ion-background-color-rgb: 18,18,18;
+ 
 
+    --ion-background-color:#1D1D21;
+    --ion-background-opacity: 0.7 ;
+    --ion-background-image: radial-gradient(#06C270 0.8px, transparent 0.8px), radial-gradient(#06C270 0.8px, #1D1D21 0.8px); ;
+    --ion-background-size: 32px 32px ;
+    --ion-background-position: 0 0,16px 16px;
     --ion-text-color: #ffffff;
     --ion-text-color-rgb: 255,255,255;
 

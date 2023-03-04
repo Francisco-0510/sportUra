@@ -1,0 +1,68 @@
+.h2-bold {
+  color: var(--green-primary-student);
+}
+.h5-medium {
+  color: var(--black-15);
+}
+.h3-bold{
+    color: var(--black-color-student);
+}
+ion-icon {
+  color: var(--black-50);
+}
+
+.card-tuto {
+    border: 0px;
+ display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 0pc;
+width:100%;
+height: 350px;
+text-transform: uppercase;
+}
+ .h3-bold{
+    color: var(--green-primary-student);
+    font-style: italic;
+}
+.btn, .btn-primario{
+    font-style: italic;
+}
+.social-feed{
+    position: relative;
+    z-index: 1;
+    background-color: var(--white-light);
+}
+.social-feed > img{
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  top: -150px;
+  left: 0px;
+  right: 0px;
+    z-index: 3;
+    /* top: -200px; */
+  }
+.container-card{
+  padding-bottom: 50%;
+}
+.container-feed{
+  margin-top: 10em;
+}
+.container-feed > h3{
+  color: var(--green-100);
+}
+ion-card{
+  background-color: var(--white-light);
+  margin-bottom: 2rem;
+  border-radius: 0px;
+  border: solid 1px var(--black-15);
+ box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);}
+.btn-publi{
+  padding: 8% 0%;
+  font-weight: bold;
+}
+.h6-bold, .body-2{
+  color: var(--black-color-student);
+}

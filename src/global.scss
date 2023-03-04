@@ -83,6 +83,8 @@
     --color-negro: #000000; */
 }
 
+
+
 //Headline 1;
 .h1-Light {
   font-family: Poppins;
@@ -355,12 +357,19 @@
 }
 
 //BUTTON TEXTS
-button{
+button, .btn{
+  text-align: center;
     margin: auto;
     width: 100%;
     padding: 12px, 24px, 12px, 24px;
     gap: 8px;
     border-radius: 0px;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.03em;
 }
 .btn-primario[disabled] {
   background-color: var(--black-75-outline);
@@ -368,13 +377,7 @@ button{
   border: solid 1px var(--black-75-outline);
 }
 .btn-primario{
-    text-transform: uppercase;
-    font-family: "Poppins";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: -0.03em;
-    background: rgba(61, 236, 157, 1);
+  background: rgba(61, 236, 157, 1);
     color: var(--black-color-student);
 }
 .btn-link{

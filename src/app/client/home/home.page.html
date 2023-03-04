@@ -1,9 +1,78 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>home</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content>
-
+<ion-content class="ion-padding h-100">
+<div class=" d-flex h-100 w-100 p-3  pb-4 my-auto flex-columnn">
+  <div class=" m-auto ">
+    <h5 class="h5-medium mb-auto">Registtrate y Participa en las Actividades</h5>
+      <h2 class="h2-bold py-2 mb-5">Culturales & Deportivas</h2>
+    <ion-grid class="mt-auto">
+      <ion-row class=" text-center mt-5">
+        <ion-col size="12" size-sm="3">
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="12" size-sm="3">
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+ </div> 
+ <!-- CONTENEDOR CARDS HOME -->
+ <div class="container-fluid container-card">
+  <div class="card card-tuto text-end my-2 ">
+    <img src="assets/img/deportiva.jpg" class="  h-100" style="filter: brightness(50%);" alt="...">
+    <div class="card-img-overlay ">
+      <h3 class="h3-bold  mb-4">Actividades Deportivas</h3>
+        <button class="btn btn-primario mt-4 w-75">Descubrir <ion-icon name="chevron-forward-outline"></ion-icon></button>
+    </div>
+  </div>
+  <div class="card card-tuto text-end my-2 ">
+    <img
+      src="assets/img/cultural.jpg"
+      class="  h-100" style="filter: brightness(50%);" alt="...">
+    <div class="card-img-overlay ">
+      <h3 class="h3-bold  mb-4">Actividades Deportivas</h3>
+      <button class="btn btn-primario mt-4 w-75">Descubrir <ion-icon name="chevron-forward-outline"></ion-icon></button>
+    </div>
+  </div> 
+ </div>
+ <div class="container-fluid social-feed py-3">
+  <img src="assets/img/login.png" alt="">
+  <div class="container-fluid container-feed ">
+    <h3 class="h3-bold">#deporTVCO</h3>
+    <ion-card *ngFor="let c of cards; let i = index">
+      <img alt="Silhouette of mountains" [src]=c.imgTuto />
+      <ion-card-header>
+        <span class="sub-2"> {{c.fecha}} </span>
+        <ion-card-title class="h6-bold">{{c.nombre}} </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-card-subtitle class="body-2">{{c.descripcion}}</ion-card-subtitle>
+        <ion-grid>
+          <ion-row>
+            <ion-col size-md="4" class="text-center btn-publi">
+              <ion-icon name="heart-outline" class="text-primary"></ion-icon>
+              {{c.likes}}
+            </ion-col>
+            <ion-col size-md="4" class="text-center btn-publi"> 
+              <ion-icon name="heart-dislike-outline" class="text-danger"></ion-icon>
+              {{c.dislikes}} </ion-col>
+              <ion-col size-md="4" class="text-center btn-publi">
+              <ion-icon name="chatbubble-outline" class="text-black"></ion-icon>
+                {{c.comments}} </ion-col>
+            <ion-col size-md="12" class="text-center btn-publi">
+              <ion-icon name="arrow-redo-outline" class="text-black"></ion-icon>
+              {{c.shared}}
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+       
+    </ion-card>
+  </div>
+ </div>
 </ion-content>
