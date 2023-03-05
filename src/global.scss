@@ -377,14 +377,8 @@ button, .btn{
   border: solid 1px var(--black-75-outline);
 }
 .btn-primario{
-  background: var(--green-primary-student);
+  background: rgba(61, 236, 157, 1);
     color: var(--black-color-student);
-    border: solid 1px transparent;
-}
-.btn-primario:hover{
-  background-color: var(--black-color-student);
-  color: var(--green-primary-student);
-  border: solid 1px var(--green-primary-student);
 }
 .btn-link{
     font-weight: 800;

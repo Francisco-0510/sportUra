@@ -17,7 +17,7 @@ ion-icon {
 flex-direction: column;
 justify-content: center;
 align-items: center;
-border-radius: 0px;
+border-radius: 0pc;
 width:100%;
 height: 350px;
 text-transform: uppercase;
@@ -56,36 +56,13 @@ text-transform: uppercase;
 ion-card{
   background-color: var(--white-light);
   margin-bottom: 2rem;
-  border-radius: 8px;
+  border-radius: 0px;
   border: solid 1px var(--black-15);
  box-shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);}
 .btn-publi{
   padding: 8% 0%;
-  
+  font-weight: bold;
 }
 .h6-bold, .body-2{
   color: var(--black-color-student);
-}
-ion-footer{
-  text-align: center;
-  text-transform: uppercase;
- 
-}
-.sub-1{
-  color: var(--white-light);
-}
-.logo{
-  color: var(--black-25);
-  font-weight: 900;
-  width: 20px;
-  height: 20px;
-}
-.logo-fb:hover{
-  color: var(--blue-50);
-}
-.logo-ig:hover{
-  color: var(--orange-50);
-}
-.logo-tw:hover{
-  color: var(--blue-50);
 }
