@@ -24,7 +24,7 @@ const routes: Routes = [
     loadChildren: () =>import('./client/home/home.module').then(m => m.HomePageModule),
   },
   {
-    path: 'lista-ctividades',
+    path: 'lista-actividades',
     loadChildren: () => import('./client/actividdes/lista-ctividades/lista-ctividades.module').then( m => m.ListaCtividadesPageModule)
   },
   {

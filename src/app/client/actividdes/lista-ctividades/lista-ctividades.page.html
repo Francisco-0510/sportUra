@@ -1,9 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>lista-ctividades</ion-title>
+    <ion-title>
+  <a [routerLink]="['/home']" class="p-auto"><ion-icon name="arrow-back-outline"></ion-icon>
+  Regresar</a>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content class="ion-padding">
+<ion-breadcrumbs >
+  <ion-breadcrumb [routerLink]="['/home']"  class="sub-1" >Inicio</ion-breadcrumb>
+  <ion-breadcrumb class="actual sub-1">Actividades Culturales</ion-breadcrumb>
+ 
+</ion-breadcrumbs>
 </ion-content>
