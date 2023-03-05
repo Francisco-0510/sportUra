@@ -14,10 +14,12 @@
   <ion-input  type="password"  placeholder="Ingrese su contraseña" formControlName="password"></ion-input>
   <span class="form-text text-danger" *ngIf="campoValido('password')">Minimo 8 caracteres</span>
 </div>
-  <ion-item class="pb-1 bg-transparent">
+ <div>
+  <ion-item class=" pb-2">
     <ion-checkbox slot="start"></ion-checkbox>
     <label class="label">Recordar Datos</label>
   </ion-item>
+ </div>
 
   <!--   <div>
       <label class="label">Ingresa tu Usuario</label>
@@ -32,8 +34,8 @@
       <span class="form-text text-danger" *ngIf="campoValido('password')">Minimo 8 caracteres</span>
     </div> -->
       <!-- <a [routerLink]="['/recovery']" class="btn-link">Olvide mi contraseña</a> -->
-      <button *ngIf="miFormulario.invalid" disabled class="btn btn-primario "> Iniar Sesión</button>
-      <button *ngIf="miFormulario.valid" type="sumbit" class="btn btn-primario" (click)="save()">Iniar Sesión</button>
-      <a [routerLink]="['/register']" class="btn-link">¿Olvidaste tu Contraseña?</a> 
+      <button *ngIf="miFormulario.invalid" disabled class="btn btn-primario mb-2"> Iniar Sesión</button>
+      <button *ngIf="miFormulario.valid" type="sumbit" class="btn btn-primario my-2" (click)="save()">Iniar Sesión</button>
+      <a [routerLink]="['/register']" class="btn-link mt-2">¿Olvidaste tu Contraseña?</a> 
   </form>
 </ion-content>

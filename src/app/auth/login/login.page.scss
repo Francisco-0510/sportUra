@@ -1,15 +1,19 @@
 img{
     width: 286px;
+     height: auto;
     margin: auto;
-    padding-top: 78px;
-    padding-bottom: 58px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .formulario{
     display: flex;
     flex-direction: column;
 }
+.label{
+    color: var(--light-25);
+}
 div{
-    padding: 4% 14px  ;
+    padding: 2% 0px  ;
 
 }
 ion-checkbox{
