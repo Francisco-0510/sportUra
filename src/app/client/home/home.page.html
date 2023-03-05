@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header> -->
 
-<ion-content class="ion-padding h-100">
+<ion-content class=" h-100">
 <div class=" d-flex h-100 w-100 p-3  pb-4 my-auto flex-columnn">
   <div class=" m-auto ">
     <h5 class="h5-medium mb-auto">Registtrate y Participa en las Actividades</h5>
@@ -27,7 +27,7 @@
     <img src="assets/img/deportiva.jpg" class="  h-100" style="filter: brightness(50%);" alt="...">
     <div class="card-img-overlay ">
       <h3 class="h3-bold  mb-4">Actividades Deportivas</h3>
-        <button class="btn btn-primario mt-4 w-75">Descubrir <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <button class="btn btn-primario mt-4 w-75">Descubrir  > > > </button>
     </div>
   </div>
   <div class="card card-tuto text-end my-2 ">
@@ -36,7 +36,7 @@
       class="  h-100" style="filter: brightness(50%);" alt="...">
     <div class="card-img-overlay ">
       <h3 class="h3-bold  mb-4">Actividades Deportivas</h3>
-      <button class="btn btn-primario mt-4 w-75">Descubrir <ion-icon name="chevron-forward-outline"></ion-icon></button>
+      <button class="btn btn-primario mt-4 w-75">Descubrir > > ></button>
     </div>
   </div> 
  </div>
@@ -55,17 +55,17 @@
         <ion-grid>
           <ion-row>
             <ion-col size-md="4" class="text-center btn-publi">
-              <ion-icon name="heart-outline" class="text-primary"></ion-icon>
+              <ion-icon name="heart-outline" class="text-primary fw-bolder|"></ion-icon>
               {{c.likes}}
             </ion-col>
             <ion-col size-md="4" class="text-center btn-publi"> 
-              <ion-icon name="heart-dislike-outline" class="text-danger"></ion-icon>
+              <ion-icon name="heart-dislike-outline" class="text-danger fw-bolder"></ion-icon>
               {{c.dislikes}} </ion-col>
               <ion-col size-md="4" class="text-center btn-publi">
-              <ion-icon name="chatbubble-outline" class="text-black"></ion-icon>
+              <ion-icon name="chatbubble-outline" class="text-black fw-bolder"></ion-icon>
                 {{c.comments}} </ion-col>
             <ion-col size-md="12" class="text-center btn-publi">
-              <ion-icon name="arrow-redo-outline" class="text-black"></ion-icon>
+              <ion-icon name="arrow-redo-outline" class="text-black fw-bolder"></ion-icon>
               {{c.shared}}
             </ion-col>
           </ion-row>
@@ -75,4 +75,35 @@
     </ion-card>
   </div>
  </div>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6" class="sub-1 p-3">Inicio</ion-col>
+        <ion-col size-md="6" class="sub-1 p-3">Deportes</ion-col>
+        <ion-col size-md="12" class="sub-1 p-3">Culturales</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-md="6" class="sub-1 p-3">Asesores</ion-col>
+        <ion-col size-md="6" class="sub-1 p-3">Reglamento</ion-col>
+      </ion-row>
+      
+    </ion-grid>
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="3">
+          <ion-icon name="logo-facebook" class="logo logo-fb"></ion-icon>
+        </ion-col>
+        <ion-col size="3">
+          <ion-icon name="logo-instagram" class="logo logo-ig"></ion-icon>
+        </ion-col>
+        <ion-col size="3">
+          <ion-icon name="logo-twitter" class="logo logo-tw"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+  
+</ion-footer>
 </ion-content>
+
