@@ -380,6 +380,20 @@ button, .btn{
   background: rgba(61, 236, 157, 1);
     color: var(--black-color-student);
 }
+.btn-primario:hover{
+  background-color: var(--green-100);
+  color: var(--white-light);
+}
+.btn-secondary{
+  background-color: var(--black-color-student);
+  border: solid 1px var(--black-15);
+  color: var(--black-15);
+}
+.btn-secondary:hover{
+  color: var(--green-primary-student);
+  background-color: var(--black-color-student);
+  border: solid 1px var(--green-primary-student);
+}
 .btn-link{
     font-weight: 800;
 font-size: 12px;
@@ -389,7 +403,11 @@ gap: 10px;
 text-decoration: none;
 text-align: center;
 text-transform: uppercase;
-color: var(--orange-75-outline);
+color: var(--green-75-outline);
+}
+.btn-link:hover{
+  color: var(--green-primary-student
+  );
 }
 ///PLACEHOLDER TEXT
 .textfiel-text {

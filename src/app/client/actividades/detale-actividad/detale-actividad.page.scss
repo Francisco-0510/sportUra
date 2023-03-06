@@ -1,0 +1,38 @@
+a{
+ color: var(--green-primary-student);
+    text-decoration: none;
+    font-weight:500;
+}
+.actual{
+    color: var(--green-primary-student);
+}
+.h6-semibold{
+    color: var(--green-primary-student
+    );
+}
+.disponibles{
+    background-color: var(--green-25);
+    color: var(--black-color-student);
+}
+.no-disponibles{
+    background-color: var(--red-25);
+    color: var(--black-color-student
+    );
+}
+.label{
+    color: var(--green-primary-student);
+}
+.encargado{
+    color: var(--green-primary-student);
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.container-info{
+    background-color: var(--white-light);
+    color: red;
+    padding: 16px;
+}
+.container-info > ion-card{
+    background-color: var(--white-light);
+}

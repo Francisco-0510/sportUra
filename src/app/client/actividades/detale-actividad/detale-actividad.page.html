@@ -1,9 +1,87 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>detale-actividad</ion-title>
+    <ion-title>
+      <a [routerLink]="['/lista-actividades']" class="p-auto"><ion-icon name="arrow-back-outline"></ion-icon>
+        Regresar</a>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-breadcrumbs class="ion-padding">
+  <ion-breadcrumb [routerLink]="['/lista-actividades']" class=" sub-1">Actividades</ion-breadcrumb>
+  <ion-breadcrumb class="actual sub-1">Detalles Actividades</ion-breadcrumb>
+</ion-breadcrumbs>
+<ion-content class="ion-padding">
 
-<ion-content>
+<ion-card>
+  <img alt="Silhouette of mountains" src="../../../assets/img/cultural.jpg" />
+  <ion-card-header>
+    <ion-card-title class="h6-semibold">Nombre de Actividad</ion-card-title>
+      <ion-chip class="disponibles">
+        <ion-label>25 cupos</ion-label>
+      </ion-chip>
+      <ion-chip class="no-disponibles">
+        <ion-label>Cupo Lleno</ion-label>
+      </ion-chip>
+  </ion-card-header>
+
+  <ion-card-content>
+      <ion-item>
+        <span class="encargado ">Tutor: &nbsp; </span><span class="name ">Santiago Gonzales</span>
+      </ion-item>
+      <ion-item>
+        <span class="encargado ">Horarios: &nbsp; </span><span class="name">Lunes 8:00</span>
+      </ion-item>
+      <ion-item>
+        <span class="encargado ">Lugar : &nbsp; </span><span class="name">Santiago Gonzales</span>
+      </ion-item>
+      <div>
+        <button class="btn btn-primario" [routerLink]="['/detale-actividad']">Más Información</button>
+      </div>
+  </ion-card-content>
+</ion-card>
+<ion-segment value="default" id="pills-tab" role="tablist">
+  <ion-segment-button value="default" id="home-tab" data-bs-toogle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+    <ion-label>Acerca de</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="segment" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-+tab-pane" aria-selected="false">
+    <ion-label>Comunidad</ion-label>
+  </ion-segment-button>
+  
+</ion-segment>
+  <div class="container-fluid container-info "  id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+    <ion-card *ngFor="let c of cards; let i = index">
+      <img alt="Silhouette of mountains" [src]=c.imgTuto />
+      <ion-card-header>
+        <span class="sub-2"> {{c.fecha}} </span>
+        <ion-card-title class="h6-bold">{{c.nombre}} </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-card-subtitle class="body-2">{{c.descripcion}}</ion-card-subtitle>
+        <ion-grid>
+          <ion-row>
+            <ion-col size-md="4" class="text-center btn-publi">
+              <ion-icon name="heart-outline" class="text-primary"></ion-icon>
+              {{c.likes}}
+            </ion-col>
+            <ion-col size-md="4" class="text-center btn-publi">
+              <ion-icon name="heart-dislike-outline" class="text-danger"></ion-icon>
+              {{c.dislikes}} </ion-col>
+            <ion-col size-md="4" class="text-center btn-publi">
+              <ion-icon name="chatbubble-outline" class="text-black"></ion-icon>
+              {{c.comments}} </ion-col>
+            <ion-col size-md="12" class="text-center btn-publi">
+              <ion-icon name="arrow-redo-outline" class="text-black"></ion-icon>
+              {{c.shared}}
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+  
+    </ion-card>
+  </div>
+  <div class="container-fluid container-info " id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+    
+asa        
+  </div>
 
 </ion-content>

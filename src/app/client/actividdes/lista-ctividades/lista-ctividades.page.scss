@@ -3,10 +3,38 @@
 }
 ion-icon{
     font-size: 20px;
+    margin: auto;
 }
 a{
-    color: var(--green-primary-student
-    );
+    color: var(--green-primary-student);
     text-decoration: none;
     font-weight:500;
+}
+.badge{
+    border-radius: 5%;
+    padding: 1.5%;
+}
+.disponibles{
+    color: var(--black-color-student);
+    background-color: var(--green-25);
+}
+.no-disponibles{
+    color: var(--white-light);
+    background-color: var(--red-75-outline);
+}
+ion-card{
+    border: solid 2px var(--black-50);
+}
+ion-card:hover {
+    border: solid 2px var(--green-primary-student);
+    /* cursor: pointer;  DESCOMENTAR EN CASO DE HACERLO PARA PC */
+}
+.body-1{
+    color: var(--white-light);
+}
+.sub-2{
+    color: var(--white-light);
+}
+ion-card-title{
+    color: var(--green-primary-student);
 }
