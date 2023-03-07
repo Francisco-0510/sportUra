@@ -35,6 +35,14 @@ const routes: Routes = [
     path: 'form-person',
     loadChildren: () => import('./formsRegister/form-person-data/form-person-data.module').then(m => m.FormPersonDataPageModule)
   },
+  {
+    path:'form-academico',
+    loadChildren: () => import('./formsRegister/form-academic-data/form-academic-data.module').then(m => m.FormAcademicDataPageModule )
+  },
+  {
+    path: 'form-tuto',
+    loadChildren: () => import('./formsRegister/select-activity/select-activity.module').then(m => m.SelectActivityPageModule)
+  },
 ];
 @NgModule({
   imports: [

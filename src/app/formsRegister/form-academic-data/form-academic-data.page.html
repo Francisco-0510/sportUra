@@ -1,9 +1,69 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>formAcademicData</ion-title>
+    <ion-title>
+      <a [routerLink]="['/form-person']" class="p-auto"><ion-icon name="arrow-back-outline"></ion-icon>
+        Regresar</a>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <h5 class="text-center h5-bold">Ingresa tus Datos Académicos</h5>
+      <ion-card-subtitle class="text-white">Rellena los campos del formulario con tus datos personales</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <form action="">
+        <ion-item fill="solid" class="mb-3">
+          <ion-label position="stacked" class="label">Matricula</ion-label>
+          <ion-input type="text"></ion-input>
+          <ion-note slot="helper">Enter a valid email</ion-note>
+          <ion-note slot="error">Invalid email</ion-note>
+        </ion-item>
+       
+        <ion-list>
+          <ion-item class="mb-3">
+            <ion-label position="stacked" class="label">Nivel Académico</ion-label>
+            <ion-select placeholder="Selecciona tu Nivel Académico " class="texttfiel-text" [multiple]="false">
+              <ion-select-option value="tsu">T.S.U</ion-select-option>
+              <ion-select-option value="ing">Ingeniería</ion-select-option>
+              <ion-select-option value="lic">Licencitura</ion-select-option>
+            </ion-select>
+          </ion-item>
+          </ion-list>
+          <ion-list>
+          <ion-item class="mb-3">
+            <ion-label position="stacked" class="label">Carrera</ion-label>
+            <ion-select placeholder="Selecciona tu Carrera" class="texttfiel-text" [multiple]="false">
+              <ion-select-option value="agricultura">Agricultura Sustentable y Protegida</ion-select-option>
+              <ion-select-option value="energias">Energías Renovables </ion-select-option>
+              <ion-select-option value="tics">Tecnologías de la Información</ion-select-option>
+              <ion-select-option value="meca">Mecatrónica</ion-select-option>
+              <ion-select-option value="negocios">Desarrollo de Negocios</ion-select-option>
+              <ion-select-option value="gastro">Gastronomía</ion-select-option>
+              <ion-select-option value="modas">Diseño y Moda Industrial</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+          <ion-list>
+          <ion-item class="mb-3">
+            <ion-label position="stacked" class="label">Grupo</ion-label>
+            <ion-select placeholder="Selecciona tu Carrera" class="texttfiel-text" [multiple]="false">
+              <ion-select-option value="G1">G1</ion-select-option>
+              <ion-select-option value="G2">G2 </ion-select-option>
+              <ion-select-option value="G3">G2</ion-select-option>
+              <ion-select-option value="G4">G3</ion-select-option>
+              <ion-select-option value="G5">G4</ion-select-option>
+              <ion-select-option value="G6">G5</ion-select-option>
+              <ion-select-option value="G7">G6</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+        <button class="btn btn-primario" type="submit" [routerLink]="['/form-tuto']">Contnuar > > > </button>
+      </form>
+    </ion-card-content>
+    </ion-card>
 
 </ion-content>
