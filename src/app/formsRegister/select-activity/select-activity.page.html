@@ -7,6 +7,35 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <h5 class="text-center h5-bold">Selecciona la actividad a realizar</h5>
+      <ion-card-subtitle class="text-white">Selecciona la actividad deportiva de tu preferencia</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-radio-group value="strawberries">
+          <ion-item>
+            <ion-label>Futbol</ion-label>
+            <ion-radio slot="end" value="grapes"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Basketball</ion-label>
+            <ion-radio slot="end" value="strawberries"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Acondicionamiento Fisico</ion-label>
+            <ion-radio slot="end" value="pineapple"></ion-radio>
+          </ion-item>
+      
+        
+        </ion-radio-group>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
 
 </ion-content>
