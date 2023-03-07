@@ -1,0 +1,19 @@
+.card-form1{
+    background: transparent;
+    border: solid 2px var(--green-primary-student);
+}
+h5{
+    color: var(--white-light);
+}
+ion-item:placeholder-shown{
+    background-color: red;
+}
+/*  ion-input[type=email]:focus > .input:focus{
+    color: var(--white-light);
+    background-color: red;
+} */
+/* form .formulario .formElement
+ion-input[type=email]:focus{
+    border: solid 2px var(--green-primary-student);
+} */
+

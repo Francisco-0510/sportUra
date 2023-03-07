@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class FormPersonDataPage implements OnInit {
 
   constructor() { }
+    
 
   ngOnInit() {
+    
   }
+  
 
 }
+

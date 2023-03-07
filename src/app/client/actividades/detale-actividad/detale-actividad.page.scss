@@ -28,11 +28,32 @@ a{
     text-transform: uppercase;
 
 }
-.container-info{
+
+.tab-pane > ion-card{
     background-color: var(--white-light);
-    color: red;
-    padding: 16px;
 }
-.container-info > ion-card{
-    background-color: var(--white-light);
+.nav-link{
+    outline: none;
+    border-radius: 0px;
+    margin: 20px;
+    color: var(--white-light);
+    border-bottom: solid 2px var(--green-primary-student);
+}
+.nav-link:hover{
+background-color: var(--green-primary-student);
+} 
+.nav-link:focus-within{
+    color: var(--black-color-student);
+    background-color: var(--green-primary-student);
+}
+/* .nav-link:is(:link:visited) {
+    background-color: red;
+} */
+.tab-pane{
+    padding-top: 2%;
+    background-color: white;
+}
+.acerca{
+    padding: 16px;
+    color: black;
 }

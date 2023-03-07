@@ -35,20 +35,27 @@
         <span class="encargado ">Lugar : &nbsp; </span><span class="name">Santiago Gonzales</span>
       </ion-item>
       <div>
-        <button class="btn btn-primario" [routerLink]="['/detale-actividad']">Más Información</button>
+        <button class="btn btn-primario" [routerLink]="['/form-person']">Inscribirme</button>
       </div>
   </ion-card-content>
 </ion-card>
-<ion-segment value="default" id="pills-tab" role="tablist">
-  <ion-segment-button value="default" id="home-tab" data-bs-toogle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-    <ion-label>Acerca de</ion-label>
-  </ion-segment-button>
-  <ion-segment-button value="segment" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-+tab-pane" aria-selected="false">
-    <ion-label>Comunidad</ion-label>
-  </ion-segment-button>
-  
-</ion-segment>
-  <div class="container-fluid container-info "  id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+<nav>
+  <div class="nav nav-pills nav-justified" id="nav-tab" >
+    <button class="nav-link  " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+      role="tab" aria-controls="nav-home ">Acerca De</button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+      role="tab" aria-controls="nav-profile" >Comunidad</button>
+  <!--   <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
+      role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button> -->
+   <!--  <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button"
+      role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button> -->
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane acerca  " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+    Reglas
+  </div>
+  <div class="tab-pane " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
     <ion-card *ngFor="let c of cards; let i = index">
       <img alt="Silhouette of mountains" [src]=c.imgTuto />
       <ion-card-header>
@@ -56,6 +63,7 @@
         <ion-card-title class="h6-bold">{{c.nombre}} </ion-card-title>
       </ion-card-header>
       <ion-card-content>
+    
         <ion-card-subtitle class="body-2">{{c.descripcion}}</ion-card-subtitle>
         <ion-grid>
           <ion-row>
@@ -76,12 +84,29 @@
           </ion-row>
         </ion-grid>
       </ion-card-content>
-  
+    
     </ion-card>
+  </div>
+  <!-- <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+    
+  </div> -->
+ <!--  <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div> -->
+</div>
+<!-- <ion-segment value="default" id="pills-tab" >
+  <ion-segment-button value="default" id="home-tab" data-bs-toogle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+    <ion-label>Acerca de</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="segment" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-+tab-pane" aria-selected="false">
+    <ion-label>Comunidad</ion-label>
+  </ion-segment-button>
+  
+</ion-segment> -->
+<!--   <div class="container-fluid container-info "  id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+    
   </div>
   <div class="container-fluid container-info " id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
     
 asa        
-  </div>
+  </div> -->
 
 </ion-content>

@@ -414,7 +414,7 @@ color: var(--green-75-outline);
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 100%;
 }
 
@@ -423,9 +423,9 @@ color: var(--green-75-outline);
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 21px;
-  color: var(--black-15);
+  color: var(--white-light);
 }
 //TEXTTOS DE AYUDA FORMD
 .label-help {
@@ -452,7 +452,7 @@ ion-input[type=password]
 
 
 
-ion-input[type=email]:focus,
+ion-input[type=text]:focus,
 ion-input[type=password]:focus {
   border: solid 1px var(--blue-75-outline);
 }

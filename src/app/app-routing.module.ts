@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'detale-actividad',
     loadChildren: () => import('./client/actividades/detale-actividad/detale-actividad.module').then( m => m.DetaleActividadPageModule)
   },
+  {
+    path: 'form-person',
+    loadChildren: () => import('./formsRegister/form-person-data/form-person-data.module').then(m => m.FormPersonDataPageModule)
+  },
 ];
 @NgModule({
   imports: [
